@@ -100,20 +100,11 @@ def handle_message(event):
     elif '熱量小幫手' in msg:
         msg='火鍋 早餐 便當 水果 \n subway 壽司 夜市 中式'
         message = TextSendMessage(text=msg)
-    elif '抽' in msg:
-            pretty=['https://cdn2.ettoday.net/images/2284/d2284228.jpg','https://img.news.ebc.net.tw/EbcNews/news/2019/11/20/1574269536_70403.jpg',
-                    'https://farm8.staticflickr.com/7628/26916596801_f5a173caf0_c.jpg','https://img.ltn.com.tw/Upload/ent/page/800/2019/05/04/phpoAVxhH.jpg',
-                    'https://img.mm52.com/r/rei_mizuna/rei_mizuna.jpg','https://pic.pimg.tw/a9431084/1390968127-3923862254_m.jpg',
-                    'https://i.imgur.com/bs32YyV.jpg','https://assets.juksy.com/files/articles/100198/800x_100_w-5eabfd75aa28c.jpg',
-                    'https://jdailyhk.com/wp-content/uploads/2017/01/I%E7%B4%9A-%E5%A4%A9%E6%9C%A8%E7%B4%949.jpg','https://i.ytimg.com/vi/SGwpQisyuug/hqdefault.jpg',
-                    'https://images.chinatimes.com/newsphoto/2019-11-08/656/20191108001309.jpg','https://www.mirrormedia.com.tw/assets/images/20190409181552-a894917e1274b52732dc47323463a404-tablet.jpg',
-                    'https://pic.pimg.tw/valiant/1555082154-3773155441_n.jpg','https://cdn2.ettoday.net/images/2284/d2284231.jpg',
-                    'https://www.popo8.com/host/data/202102/16/9/p1613491138_27600.jpg_b.jpg','https://pbs.twimg.com/media/EhF-Pu1UwAEN-T2.jpg',
-                    'https://i.imgur.com/9KKBNbN.jpg','https://assets.juksy.com/files/articles/80262/800x_100_w-5b446006baaca.jpg',
-                    'https://i.pinimg.com/1200x/cd/08/2d/cd082d126d0f8824511105fab7bf4e95.jpg','https://www.mymypic.net/data/attachment/forum/202004/17/004947y2kdd88hyaea81s8.jpg',
-                    'https://farm8.staticflickr.com/7524/26916597141_99ebaf0f2d.jpg','https://i.pinimg.com/originals/7f/0b/a7/7f0ba7e6d95075d33dcd7db320c971dc.jpg',
-                    'https://pbs.twimg.com/media/EWIy7B2UcAADFAG.jpg','https://upload.cc/i1/2020/08/13/KfBQRY.jpg']
-            x=random.randint(0,24)
+    elif '/抽' == msg:
+            pretty=['https://ms0728707.000webhostapp.com/summer_img/emaster.jpg',
+                    'https://ms0728707.000webhostapp.com/summer_img/one.jpg',
+                    ]
+            x=random.randint(0,2)
             imgurl=pretty[x]
             message = ImageSendMessage(original_content_url=imgurl,preview_image_url=imgurl)
     elif '復仇者' in msg:
